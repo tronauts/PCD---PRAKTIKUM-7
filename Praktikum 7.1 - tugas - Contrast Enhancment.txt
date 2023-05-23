@@ -1,0 +1,13 @@
+Metode CLAHE (Contrast Limited Adaptive Histogram Equalization) adalah sebuah teknik yang digunakan untuk meningkatkan kontras citra dengan mempertahankan detail gambar yang penting. Metode ini adalah variasi dari Histogram Equalization (HE) yang memiliki kemampuan untuk menyesuaikan distribusi histogram lokal pada citra.
+
+Berikut adalah rangkuman tentang konsep metode CLAHE:
+
+Membagi citra menjadi beberapa blok: Citra input dibagi menjadi beberapa blok kecil dengan ukuran yang sama.
+
+Menghitung histogram pada setiap blok: Histogram setiap blok dihitung untuk mendapatkan distribusi intensitas piksel lokal.
+
+Menggunakan kontras terbatas: Untuk menghindari peningkatan kebisingan, kontras diatur secara terbatas dalam setiap blok. Jika histogram melampaui batas kontras tertentu, maka piksel akan dibatasi untuk mengurangi efek amplifikasi yang berlebihan.
+
+Membuat fungsi transfer lokal: Fungsi transfer lokal digunakan untuk melakukan pemetaan ulang pada setiap blok agar histogramnya merata dan meningkatkan kontras.
+
+Menyusun kembali blok-blok: Setelah pemetaan ulang pada setiap blok, blok-blok tersebut disusun kembali menjadi citra hasil yang telah ditingkatkan kontrasnya.
